@@ -1,0 +1,43 @@
+body {
+    background-image: url('https://img.freepik.com/fotos-premium/escenario-hexagonal-luz-neon-purpura_33739-267.jpg'); /* Imagen de tecnología */
+    background-size: cover;
+    background-position: center;
+}
+
+h1 {
+    font-family: 'Arial', sans-serif;
+}
+
+textarea {
+    resize: none;
+}
+
+.container {
+    padding: 30px;
+    border-radius: 10px;
+    max-width: 600px;
+    margin-top: 100px;
+}
+
+.btn-reemplazar {
+    background: linear-gradient(45deg, #90004f, #00008B); /* Negro con degradado azul metálico */
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn-reemplazar:hover {
+    background: linear-gradient(45deg, #00008B, #880255); /* Efecto hover */
+    color: #FFF;
+}
+
+mark {
+    background: linear-gradient(45deg, #00008B, #880255); /* Efecto hover */
+    color: white;
+    padding: 0 5px;
+    border-radius: 5px;
+}

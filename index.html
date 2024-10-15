@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reemplazo de palabras</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center text-light">Reemplazo de palabras</h1>
+        <div class="form-group mt-4">
+            <label for="input-texto" class="text-light text-center">Ingresa un texto:</label>
+            <div id="input-texto" class="form-control" contenteditable="true" style="height: 100px; overflow-y: scroll;"></div>
+        </div>
+        
+        <!-- Selector de palabras del diccionario -->
+        <div class="form-group mt-3">
+            <label for="palabra-diccionario" class="text-light text-center d-block">Seleccionar palabra del diccionario:</label>
+            <select class="form-control" id="palabra-diccionario">
+                <option value="">Selecciona una palabra</option>
+                <option value="rápido">rápido</option>
+                <option value="grande">grande</option>
+                <option value="feliz">feliz</option>
+                <option value="casa">casa</option>
+                <option value="bonito">bonito</option>
+                <option value="inteligente">inteligente</option>
+                <option value="fuerte">fuerte</option>
+                <option value="viejo">viejo</option>
+                <option value="amable">amable</option>
+                <option value="trabajo">trabajo</option>
+                <option value="niño">niño</option>
+                <option value="importante">importante</option>
+                <option value="tranquilo">tranquilo</option>
+                <option value="fácil">fácil</option>
+            </select>
+        </div>
+
+        <!-- Selector de sinónimos -->
+        <div class="form-group mt-3">
+            <label for="sinonimo" class="text-light text-center d-block">Reemplazar con un sinonimo:</label>
+            <select class="form-control" id="sinonimo">
+                <option value="">Selecciona una palabra</option>
+            </select>
+        </div>
+
+        <!-- Botones: Reemplazar, Buscar y Limpiar -->
+        <div class="text-center d-flex justify-content-center mt-3">
+            <button id="boton-buscar" class="btn btn-reemplazar ml-2">Buscar</button>
+            <button id="boton-reemplazar" class="btn btn-reemplazar mr-2">Reemplazar</button>
+            <button id="boton-limpiar" class="btn btn-reemplazar ml-2">Limpiar Todo</button>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
